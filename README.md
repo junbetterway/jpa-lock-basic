@@ -2,11 +2,9 @@
 
 There are two ways to handle database concurrency conflicts provided by the Java Persistence API (JPA):
 
-* Using optimistic locking
-Detect the issue and react to it. 
+* Using **Optimistic locking** will detect the issue and react to it based on your delegation 
 
-* Using pessimistic locking 
-Do not let the system get into such situations by preventing it.
+* Using **Pessimistic locking** will not let the system get into such conflicts by preventing it.
 
 This codebase provides the basic handling of database concurrrency conflicts with the aide of Hibernate, Spring Data and Spring Retry
 
